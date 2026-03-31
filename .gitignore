@@ -1,1 +1,9 @@
 .claude/
+
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
+
+# OS
+.DS_Store

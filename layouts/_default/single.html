@@ -1,0 +1,14 @@
+{{ define "main" }}
+<article class="post">
+  <div class="container">
+    <a href="/updates" class="post__back">← Back to Updates</a>
+    <header class="post__header">
+      <p class="post__date">{{ .Date.Format "January 2, 2006" }}</p>
+      <h1 class="post__title">{{ .Title }}</h1>
+    </header>
+    <div class="post__content">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}

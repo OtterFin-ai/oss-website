@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="updates">
+  <div class="container">
+    <div class="updates__header">
+      <p class="section-label">Updates</p>
+      <h1 class="section-title">What's new with OtterFin</h1>
+      <p class="section-subtitle">News, release notes, and development updates.</p>
+    </div>
+
+    <div class="updates__list">
+      {{ range .Pages }}
+      <article class="update-card">
+        <p class="update-card__date">{{ .Date.Format "January 2, 2006" }}</p>
+        <h2 class="update-card__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p class="update-card__summary">{{ .Summary }}</p>
+        <a href="{{ .Permalink }}" class="update-card__read-more">Read more →</a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

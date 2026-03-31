@@ -1,0 +1,9 @@
+baseURL = 'https://otterfin.org/'
+languageCode = 'en-us'
+title = 'OtterFin Community'
+
+[permalinks]
+  [permalinks.section]
+    updates = '/updates/'
+  [permalinks.page]
+    updates = '/updates/:slug/'
